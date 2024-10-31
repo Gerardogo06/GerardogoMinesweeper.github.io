@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: solid;
+}
+td {
+    padding: 0px;
+}
+.game-button {
+    width: 25px;
+    height: 25px;
+    font-size: 14px;
+    background-color: #686D76;
+    color: white;
+    border: outset;
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+.game-button:hover {
+    background-color: #373A40;
+  border: inset; 
+}
+
+.game-button-Bandera {
+    border: outset;
+    background-color: #A9A9A9;
+    display: flex;
+}
+
+#dificult {
+    flex-direction: row;
+    border-style: ridge;
+
+}
+
+.game-button-revealed {
+    background-color: #A9A9A9; 
+    color: black; 
+}
+
+.game-button-mine {
+    background-color: #FF6347; 
+}
+
+

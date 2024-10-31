@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper</title>
+    <link rel="icon" href="imagenes/Flag.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Buscaminas</h2>
+
+    <div class="dificult">
+        <button onclick="easy()">Fácil</button>
+        <button onclick="mid()">Medio</button>
+        <button onclick="hard()">Dificil</button>
+        <button onclick="hardcore()">Hardcore</button>
+        <button onclick="leyend()">Leyenda</button>
+        <button onclick="toggleConfig()">⚙️</button>
+        <hr>
+    </div>
+
+    <div id="config" style="display: none;">
+        <label for="rows">Filas:</label>
+        <input type="number" id="rows" min="5" value="5">
+        <label for="columns">Columnas:</label>
+        <input type="number" id="columns" min="5" value="5">
+    </div>
+
+    <div>
+        <button class="dificult" onclick="generateTable()">Iniciar juego</button>
+    </div>
+    
+    <table id="buttonTable"></table>
+    <script src="script.js"></script>
+
+    <script>
+        function toggleConfig() {
+            const config = document.getElementById("config");
+            if (config.style.display === "none") {
+                config.style.display = "block"; 
+            } else {
+                config.style.display = "none"; 
+            }
+        }
+    </script>
+</body>
+</html>
